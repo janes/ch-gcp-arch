@@ -31,7 +31,7 @@ allow {
 resource "google_compute_firewall" "securenetwork-allow-rdp" {
 name = "securenetwork-allow-rdp"
 network = "${google_compute_network.securenetwork.self_link}"
-source_ranges = ["10.128.0.0/20"]
+source_ranges = ["10.130.0.0/20"]
 allow {
     protocol = "tcp"
     ports    = ["3389"] 
