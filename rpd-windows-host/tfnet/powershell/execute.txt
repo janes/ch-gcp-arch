@@ -1,0 +1,5 @@
+import-module servermanager
+
+add-windowsfeature web-server -includeallsubfeature
+
+echo '<!doctype html><html><body><h1>Hello World!</h1></body></html>' > C:\inetpub\wwwroot\index.html
